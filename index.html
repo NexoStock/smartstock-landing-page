@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title data-i18n="title">SmartStock — IoT inventory monitoring for minimarkets and corner stores</title>
+    <meta name="description" data-i18n="desc" data-i18n-attr="content"
+          content="SmartStock monitors your physical inventory with IoT weight sensors, compares it against your recorded stock and alerts you before a product runs out.">
+    <meta name="keywords" content="inventory management, IoT sensors, stock monitoring, minimarket, corner store, SmartStock, NexoStock">
+    <meta name="author" content="NexoStock">
+
+    <link rel="icon" href="assets/images/smartstock-logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="skip">Skip to main content</a>
+
+<header>
+    <div class="container bar">
+        <a class="brand" href="index.html">
+            <img src="assets/images/smartstock-logo.png" alt="" width="28" height="28">
+            SmartStock
+        </a>
+
+        <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="nav">
+            <span class="visually-hidden" data-i18n="openMenu">Open navigation menu</span>
+            <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+
+        <nav id="nav" aria-label="Primary">
+            <ul>
+                <li><a href="#uses" data-i18n="navUses">Use cases</a></li>
+                <li><a href="#compare" data-i18n="navCompare">Comparison</a></li>
+                <li><a href="#plans" data-i18n="navPlans">Plans</a></li>
+                <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <div class="actions">
+            <div class="lang" role="group" aria-label="Language">
+                <button type="button" data-lang="en-US" aria-pressed="true">EN</button>
+                <button type="button" data-lang="es-419" aria-pressed="false">ES</button>
+            </div>
+            <a class="btn" href="#" data-app="signup" data-i18n="signUp">Sign up</a>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+
+    <!-- US16 -->
+    <section class="hero">
+        <div class="container">
+            <h1 data-i18n="heroTitle">Know what is really on your shelves</h1>
+            <p data-i18n="heroLead">
+                Manual counts never match the shelf. SmartStock reads your physical inventory with
+                IoT weight sensors, compares it against your recorded stock and warns you before a
+                product runs out.
+            </p>
+            <div class="cta">
+                <a class="btn" href="#" data-app="signup" data-i18n="heroCta">Start free trial</a>
+                <a class="btn ghost" href="#contact" data-i18n="heroDemo">Request a demo</a>
+            </div>
+            <p class="note" data-i18n="heroNote">No card required · Setup in under a day</p>
+        </div>
+    </section>
+
+    <!-- US16 -->
+    <section class="soft">
+        <div class="container">
+            <div class="head">
+                <h2 data-i18n="probTitle">Counting by hand costs you sales</h2>
+                <p data-i18n="probLead">
+                    In most corner stores and minimarkets, stock control still depends on periodic
+                    counts that do not reflect what is on the shelf right now.
+                </p>
+            </div>
+            <div class="grid cols-3">
+                <article class="card">
+                    <h3 data-i18n="prob1">Stockouts you notice too late</h3>
+                    <p data-i18n="prob1Text">By the time somebody sees the empty shelf, the sale is lost.</p>
+                </article>
+                <article class="card">
+                    <h3 data-i18n="prob2">Records that do not match reality</h3>
+                    <p data-i18n="prob2Text">Shrinkage and counting errors open a gap nobody detects until the next full count.</p>
+                </article>
+                <article class="card">
+                    <h3 data-i18n="prob3">Hours spent checking shelves</h3>
+                    <p data-i18n="prob3Text">Staff time goes into walking the aisles instead of serving customers.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- US17 and US18 -->
+    <section id="uses">
+        <div class="container">
+            <div class="head">
+                <h2 data-i18n="usesTitle">Built for the way your business works</h2>
+            </div>
+            <div class="grid cols-2">
+                <article class="card">
+                    <p class="tag" data-i18n="cornerTag">Corner stores</p>
+                    <h3 data-i18n="cornerTitle">For a shop where the owner is behind the counter</h3>
+                    <ul>
+                        <li data-i18n="corner1">Track the twenty products that make most of your sales.</li>
+                        <li data-i18n="corner2">Get the low-stock alert on WhatsApp, without a computer.</li>
+                        <li data-i18n="corner3">No barcode readers and no point-of-sale integration.</li>
+                    </ul>
+                    <a class="btn" href="#" data-app="signupCorner" data-i18n="cornerCta">Create my corner store account</a>
+                </article>
+
+                <article class="card">
+                    <p class="tag" data-i18n="miniTag">Minimarkets</p>
+                    <h3 data-i18n="miniTitle">For a store with staff, shifts and higher volume</h3>
+                    <ul>
+                        <li data-i18n="mini1">Compare physical against recorded stock across the catalogue.</li>
+                        <li data-i18n="mini2">A dashboard of what is low, normal or without a sensor.</li>
+                        <li data-i18n="mini3">Automatic alerts when the gap goes over 10%.</li>
+                    </ul>
+                    <a class="btn" href="#" data-app="signupMini" data-i18n="miniCta">Create my minimarket account</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- US23 -->
+    <section id="compare" class="soft">
+        <div class="container">
+            <div class="head">
+                <h2 data-i18n="cmpTitle">How SmartStock compares</h2>
+                <p data-i18n="cmpLead">Most inventory platforms were designed for supermarket chains.</p>
+            </div>
+            <div class="scroll">
+                <table>
+                    <caption class="visually-hidden" data-i18n="cmpCaption">
+                        Comparison of SmartStock against shelf-scanning platforms and traditional inventory software
+                    </caption>
+                    <thead>
+                    <tr>
+                        <th scope="col" data-i18n="cmpCol0">Capability</th>
+                        <th scope="col">SmartStock</th>
+                        <th scope="col" data-i18n="cmpCol2">Shelf scanning</th>
+                        <th scope="col" data-i18n="cmpCol3">Traditional software</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" data-i18n="cmpRow1">Reads the physical stock automatically</th>
+                        <td data-i18n="yes">Yes</td><td data-i18n="yes">Yes</td><td data-i18n="no">No</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" data-i18n="cmpRow2">Works without a point-of-sale integration</th>
+                        <td data-i18n="yes">Yes</td><td data-i18n="no">No</td><td data-i18n="no">No</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" data-i18n="cmpRow3">Affordable for a single store</th>
+                        <td data-i18n="yes">Yes</td><td data-i18n="no">No</td><td data-i18n="yes">Yes</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" data-i18n="cmpRow4">Alerts on WhatsApp</th>
+                        <td data-i18n="yes">Yes</td><td data-i18n="no">No</td><td data-i18n="no">No</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" data-i18n="cmpRow5">Setup time</th>
+                        <td data-i18n="cmpFast">Under a day</td>
+                        <td data-i18n="cmpWeeks">Weeks</td>
+                        <td data-i18n="cmpDays">Days</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- US19 -->
+    <section id="plans">
+        <div class="container">
+            <div class="head">
+                <h2 data-i18n="plansTitle">Plans that grow with your store</h2>
+                <p data-i18n="plansLead">Per store, per month. Sensors are billed once.</p>
+            </div>
+            <div class="grid cols-3">
+                <article class="card plan">
+                    <h3 data-i18n="p1Name">Starter</h3>
+                    <p class="price">S/ 49 <span data-i18n="perMonth">/ month</span></p>
+                    <ul>
+                        <li data-i18n="p1f1">Up to 20 monitored products</li>
+                        <li data-i18n="p1f2">Email alerts</li>
+                        <li data-i18n="p1f3">Real-time monitoring panel</li>
+                    </ul>
+                    <a class="btn ghost block" href="#" data-app="signupStarter" data-i18n="p1Cta">Choose Starter</a>
+                </article>
+
+                <article class="card plan pick">
+                    <h3 data-i18n="p2Name">Growth</h3>
+                    <p class="price">S/ 129 <span data-i18n="perMonth">/ month</span></p>
+                    <ul>
+                        <li data-i18n="p2f1">Up to 120 monitored products</li>
+                        <li data-i18n="p2f2">Email and WhatsApp alerts</li>
+                        <li data-i18n="p2f3">Physical against recorded comparison</li>
+                        <li data-i18n="p2f4">Inventory dashboard</li>
+                    </ul>
+                    <a class="btn block" href="#" data-app="signupGrowth" data-i18n="p2Cta">Choose Growth</a>
+                </article>
+
+                <article class="card plan">
+                    <h3 data-i18n="p3Name">Business</h3>
+                    <p class="price">S/ 279 <span data-i18n="perMonth">/ month</span></p>
+                    <ul>
+                        <li data-i18n="p3f1">Unlimited monitored products</li>
+                        <li data-i18n="p3f2">Multiple stores in one account</li>
+                        <li data-i18n="p3f3">Full API access</li>
+                    </ul>
+                    <a class="btn ghost block" href="#contact" data-i18n="p3Cta">Talk to sales</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- US22 -->
+    <section class="soft">
+        <div class="container">
+            <div class="head">
+                <h2 data-i18n="testTitle">What store owners say</h2>
+            </div>
+            <div class="grid cols-3">
+                <figure class="card">
+                    <blockquote><p data-i18n="test1">
+                        I used to find out the rice had run out when a customer asked for it. Now the
+                        alert reaches me on WhatsApp and I order the same morning.
+                    </p></blockquote>
+                    <figcaption>
+                        <strong>Rosa M.</strong>
+                        <span data-i18n="test1Role">Corner store owner, San Martín de Porres</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="card">
+                    <blockquote><p data-i18n="test2">
+                        The comparison between what the system says and what is on the shelf showed us
+                        a gap we had been carrying for months.
+                    </p></blockquote>
+                    <figcaption>
+                        <strong>Julio C.</strong>
+                        <span data-i18n="test2Role">Minimarket manager, Los Olivos</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="card">
+                    <blockquote><p data-i18n="test3">
+                        Placing the sensors took us one afternoon. I did not have to change anything
+                        about how we already work.
+                    </p></blockquote>
+                    <figcaption>
+                        <strong>Elena V.</strong>
+                        <span data-i18n="test3Role">Corner store owner, Comas</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- US21 -->
+    <section id="faq">
+        <div class="container">
+            <div class="head">
+                <h2 data-i18n="faqTitle">Questions about installing the sensors</h2>
+            </div>
+            <div class="faq">
+                <div>
+                    <h3><button type="button" aria-expanded="false" aria-controls="a1" id="q1">
+                        <span data-i18n="q1">Do I need an electrician to install them?</span>
+                    </button></h3>
+                    <div id="a1" role="region" aria-labelledby="q1" hidden>
+                        <p data-i18n="a1">
+                            No. Each sensor is a tray that sits on the shelf, connects to your Wi-Fi and
+                            plugs into a standard outlet. You link it to a product from the panel.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h3><button type="button" aria-expanded="false" aria-controls="a2" id="q2">
+                        <span data-i18n="q2">What happens if my internet connection drops?</span>
+                    </button></h3>
+                    <div id="a2" role="region" aria-labelledby="q2" hidden>
+                        <p data-i18n="a2">
+                            The panel marks the sensor as disconnected after five minutes without a new
+                            reading, so you always know whether what you see is current.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h3><button type="button" aria-expanded="false" aria-controls="a3" id="q3">
+                        <span data-i18n="q3">Does one sensor work for several products?</span>
+                    </button></h3>
+                    <div id="a3" role="region" aria-labelledby="q3" hidden>
+                        <p data-i18n="a3">
+                            No. Each sensor is linked to one product, because the reading is a weight and
+                            mixing products would make it impossible to tell which one went down.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h3><button type="button" aria-expanded="false" aria-controls="a4" id="q4">
+                        <span data-i18n="q4">Can I move a sensor to a different product?</span>
+                    </button></h3>
+                    <div id="a4" role="region" aria-labelledby="q4" hidden>
+                        <p data-i18n="a4">
+                            Yes. You unlink it from the panel and link it to the new product, which records
+                            a new reference weight. The previous reading history is kept.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- US20 -->
+    <section id="contact" class="soft">
+        <div class="container">
+            <div class="head">
+                <h2 data-i18n="contactTitle">See SmartStock on your own shelves</h2>
+                <p data-i18n="contactLead">Leave us your details and we will arrange a demonstration.</p>
+            </div>
+
+            <form id="demo" novalidate>
+                <div class="field">
+                    <label for="name" data-i18n="fName">Full name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="nameError">
+                    <p class="error" id="nameError" role="alert"></p>
+                </div>
+                <div class="field">
+                    <label for="business" data-i18n="fBusiness">Business name</label>
+                    <input type="text" id="business" name="business" autocomplete="organization" required aria-describedby="businessError">
+                    <p class="error" id="businessError" role="alert"></p>
+                </div>
+                <div class="field">
+                    <label for="email" data-i18n="fEmail">Email address</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="emailError">
+                    <p class="error" id="emailError" role="alert"></p>
+                </div>
+                <div class="field">
+                    <label for="segment" data-i18n="fSegment">Type of business</label>
+                    <select id="segment" name="segment">
+                        <option value="corner-store" data-i18n="fCorner">Corner store</option>
+                        <option value="minimarket" data-i18n="fMini">Minimarket</option>
+                    </select>
+                </div>
+                <button class="btn block" type="submit" data-i18n="fSubmit">Request demonstration</button>
+                <p class="status" id="status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container foot">
+        <p data-i18n="copyright">© 2026 NexoStock · SmartStock</p>
+        <ul>
+            <li><a href="terms-of-service.html" data-i18n="terms">Terms and conditions</a></li>
+            <li><a href="https://github.com/NexoStock" rel="noopener">GitHub</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
