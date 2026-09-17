@@ -18,6 +18,8 @@ var APP_ROUTES = {
 var ES = {
     title: 'SmartStock — Monitoreo de inventario con sensores IoT para minimarkets y bodegas',
     desc: 'SmartStock monitorea tu inventario físico con sensores de peso IoT, lo compara con tu stock registrado y te avisa antes de que un producto se agote.',
+    navAria: 'Navegación principal',
+    languageAria: 'Selector de idioma',
     skip: 'Ir al contenido principal',
     openMenu: 'Abrir el menú de navegación',
 
@@ -27,6 +29,8 @@ var ES = {
     navFaq: 'Preguntas',
     signUp: 'Crear cuenta',
 
+    heroImageAlt: 'Dueño de una Bodega de barrio o administrador de un Minimarket junto a estantes con productos mientras utiliza SmartStock para monitorear el inventario.',
+    heroKicker: 'Monitorea tu tienda con SmartStock',
     heroTitle: 'Conoce lo que hay realmente en tus estantes',
     heroLead: 'Los conteos manuales nunca coinciden con el estante. SmartStock lee tu inventario físico con sensores de peso IoT, lo compara con tu stock registrado y te avisa antes de que un producto se agote.',
     heroCta: 'Empezar prueba gratuita',
@@ -42,18 +46,18 @@ var ES = {
     prob3: 'Horas revisando estantes',
     prob3Text: 'El tiempo del personal se va en recorrer los pasillos en vez de atender a los clientes.',
 
-    usesTitle: 'Pensado para cómo funciona tu negocio',
+    usesTitle: 'Adaptado a la forma en que opera tu negocio',
     cornerTag: 'Bodegas de barrio',
     cornerTitle: 'Para una tienda donde el dueño atiende el mostrador',
-    corner1: 'Monitorea los veinte productos que concentran la mayor parte de tus ventas.',
-    corner2: 'Recibe la alerta de stock bajo en WhatsApp, sin usar una computadora.',
-    corner3: 'Sin lectores de código de barras ni integración con el punto de venta.',
+    corner1: 'Monitorea los productos de mayor rotación en tu bodega.',
+    corner2: 'Recibe la alerta de stock bajo por WhatsApp, sin necesitar una computadora.',
+    corner3: 'No necesitas lectores de código de barras ni integrarte con tu punto de venta.',
     cornerCta: 'Crear mi cuenta de bodega',
     miniTag: 'Minimarkets',
     miniTitle: 'Para una tienda con personal, turnos y mayor volumen',
-    mini1: 'Compara el stock físico con el registrado en todo el catálogo.',
-    mini2: 'Un dashboard de qué está bajo, normal o sin sensor asignado.',
-    mini3: 'Alertas automáticas cuando la diferencia supera el 10%.',
+    mini1: 'Compara el stock físico con el registrado en todo tu catálogo.',
+    mini2: 'Visualiza en un dashboard qué productos están bajos, normales o sin sensor asignado.',
+    mini3: 'Recibe alertas automáticas cuando la diferencia supera el 10%.',
     miniCta: 'Crear mi cuenta de minimarket',
 
     cmpTitle: 'Cómo se compara SmartStock',
@@ -93,6 +97,9 @@ var ES = {
     p3f3: 'Acceso completo al API',
     p3Cta: 'Hablar con ventas',
 
+    testEyebrow: 'EXPERIENCIAS DE NUESTROS USUARIOS',
+    testLead: 'Historias de pequeños comercios que buscan controlar mejor su inventario.',
+    stars5: '5 estrellas',
     testTitle: 'Lo que dicen los dueños de tienda',
     test1: 'Antes me enteraba de que el arroz se había acabado cuando un cliente lo pedía. Ahora la alerta me llega por WhatsApp y hago el pedido esa misma mañana.',
     test1Role: 'Dueña de bodega, San Martín de Porres',
@@ -205,7 +212,8 @@ function initialLocale() {
         saved = localStorage.getItem('smartstock.lang');
     } catch (e) { /* ver setLocale */ }
     if (saved === 'es-419' || saved === 'en-US') return saved;
-    return (navigator.language || '').toLowerCase().indexOf('es') === 0 ? 'es-419' : 'en-US';
+    /* Requisito del curso: English (en_US) es el idioma por defecto. */
+    return 'en-US';
 }
 
 document.addEventListener('DOMContentLoaded', function () {
