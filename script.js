@@ -18,6 +18,8 @@ var APP_ROUTES = {
 var ES = {
     title: 'SmartStock — Monitoreo de inventario con sensores IoT para minimarkets y bodegas',
     desc: 'SmartStock monitorea tu inventario físico con sensores de peso IoT, lo compara con tu stock registrado y te avisa antes de que un producto se agote.',
+    navAria: 'Navegación principal',
+    languageAria: 'Selector de idioma',
     skip: 'Ir al contenido principal',
     openMenu: 'Abrir el menú de navegación',
 
@@ -210,7 +212,8 @@ function initialLocale() {
         saved = localStorage.getItem('smartstock.lang');
     } catch (e) { /* ver setLocale */ }
     if (saved === 'es-419' || saved === 'en-US') return saved;
-    return (navigator.language || '').toLowerCase().indexOf('es') === 0 ? 'es-419' : 'en-US';
+    /* Requisito del curso: English (en_US) es el idioma por defecto. */
+    return 'en-US';
 }
 
 document.addEventListener('DOMContentLoaded', function () {
