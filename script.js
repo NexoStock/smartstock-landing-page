@@ -27,6 +27,8 @@ var ES = {
     navFaq: 'Preguntas',
     signUp: 'Crear cuenta',
 
+    heroImageAlt: 'Dueño de una Bodega de barrio o administrador de un Minimarket junto a estantes con productos mientras utiliza SmartStock para monitorear el inventario.',
+    heroKicker: 'Monitorea tu tienda con SmartStock',
     heroTitle: 'Conoce lo que hay realmente en tus estantes',
     heroLead: 'Los conteos manuales nunca coinciden con el estante. SmartStock lee tu inventario físico con sensores de peso IoT, lo compara con tu stock registrado y te avisa antes de que un producto se agote.',
     heroCta: 'Empezar prueba gratuita',
