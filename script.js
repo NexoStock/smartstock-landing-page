@@ -3,7 +3,7 @@
    preguntas frecuentes y validación del formulario. */
 
 /* URL de la aplicación web. Al desplegarla, se cambia solo esta línea. */
-var APP_URL = 'http://localhost:4200';
+var APP_URL = 'https://nexostock.github.io/smartstock-frontend';
 
 var APP_ROUTES = {
     signup: '/sign-up',
