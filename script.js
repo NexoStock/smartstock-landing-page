@@ -25,6 +25,7 @@ var ES = {
 
     navUses: 'Casos de uso',
     navCompare: 'Comparación',
+    navVideos: 'Videos',
     navPlans: 'Planes',
     navFaq: 'Preguntas',
     signUp: 'Crear cuenta',
@@ -59,6 +60,19 @@ var ES = {
     mini2: 'Visualiza en un dashboard qué productos están bajos, normales o sin sensor asignado.',
     mini3: 'Recibe alertas automáticas cuando la diferencia supera el 10%.',
     miniCta: 'Crear mi cuenta de minimarket',
+
+    videosEyebrow: 'CONOCE SMARTSTOCK',
+    videosTitle: 'Descubre SmartStock en acción',
+    videosLead: 'Conoce lo que ofrece nuestro producto y al equipo que lo está desarrollando.',
+    videoProductCategory: 'EL PRODUCTO',
+    videoProductTitle: 'About the Product',
+    videoProductText: 'Descubre cómo SmartStock ayuda a bodegas y minimarkets a monitorear sus existencias mediante sensores IoT.',
+    videoProductIframeTitle: 'SmartStock — Video sobre el producto',
+    videoTeamCategory: 'EL EQUIPO',
+    videoTeamTitle: 'About the Team',
+    videoTeamText: 'Conoce a NexoStock y el proceso colaborativo detrás del desarrollo de SmartStock.',
+    videoTeamIframeTitle: 'NexoStock — Video sobre el equipo',
+    videoWatchYoutube: 'Ver en YouTube ↗',
 
     cmpTitle: 'Cómo se compara SmartStock',
     cmpLead: 'La mayoría de plataformas de inventario fueron diseñadas para cadenas de supermercados.',
